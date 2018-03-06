@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add userApp</title>
+</head>
+<body>
+<h2>Add product</h2>
+<form method="post" th:action="@{/addproduct}" th:object="${dministratation}">
+  product_name<input type="text"th:field="*{ product_namee}">
+  price_range <input type="text" th:field="*{price_range}">
+  category <input type="text" th:field="*{category}">
+ <input type="submit" value="submit">
+</form>
+</body>
+</html>
